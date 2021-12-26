@@ -6,9 +6,7 @@
 
 .container {
   font-family: "Montserrat", sans-serif;
-  padding: 0;
-  margin: 0;
-
+  
   .nav {
     height: 10vh;
     display: flex;
@@ -378,6 +376,7 @@
 }
 
 @media (max-width: 767px) {
+
   .container {
     .nav {
       position: relative;
@@ -514,4 +513,5 @@
       }
     }
   }
+
 }

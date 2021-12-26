@@ -55,6 +55,7 @@ let cardValues = {
     },
   ],
 };
+
 let cardNa = document.querySelector(".cards");
 let sortFilter = document.querySelector(".sort__filter");
 
