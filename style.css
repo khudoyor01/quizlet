@@ -300,8 +300,9 @@
 }
 
 .container .box {
+  margin-top: 1rem;
   height: 50vh;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .container .box .box__sort {
@@ -648,7 +649,7 @@
   }
   .container .box {
     height: 60vh;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
   .container .box .box__sort {
     -webkit-box-orient: vertical;

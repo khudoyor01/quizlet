@@ -218,9 +218,9 @@
   // end section
 
   .box {
-    // margin-top: 1rem;
+    margin-top: 1rem;
     height: 50vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     .box__sort {
       display: flex;
       justify-content: space-evenly;
@@ -481,7 +481,7 @@
 
     .box {
       height: 60vh;
-      overflow-y: auto;
+      overflow-y: scroll;
       .box__sort {
         flex-direction: column;
         .sort__filter {
