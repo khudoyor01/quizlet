@@ -7,6 +7,8 @@
 
 .container {
   font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .container .nav {
@@ -140,9 +142,17 @@
   color: #44bb6a;
 }
 
+.container .nav .mobile__nav {
+  display: none;
+}
+
 .container .section {
   height: 90vh;
   width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #f2fbf6;
 }
 
@@ -158,7 +168,7 @@
 }
 
 .container .section .section__content .content__text {
-  width: 30%;
+  width: 32%;
 }
 
 .container .section .section__content .content__text .text__title {
@@ -166,6 +176,7 @@
   font-weight: 600;
   color: #000;
   line-height: 36px;
+  width: 80%;
 }
 
 .container .section .section__content .content__text .text__text {
@@ -200,7 +211,7 @@
 }
 
 .container .section .section__content .content__img img {
-  width: 70%;
+  width: 68%;
   height: 72%;
 }
 
@@ -282,10 +293,15 @@
   }
 }
 
+@media (min-width: 2560px) {
+  .container .section {
+    height: 70vh;
+  }
+}
+
 .container .box {
-  margin-top: 1rem;
   height: 50vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .container .box .box__sort {
@@ -410,7 +426,7 @@
   justify-content: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  margin: 1rem 1rem;
+  margin: 1rem;
 }
 
 .container .box .box__card .cards .card .card__content {
@@ -438,6 +454,9 @@
 .container .footer {
   height: 30vh;
   background-color: #f2fbf6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container .footer .footer__content {
@@ -500,7 +519,157 @@
 
 @media (max-width: 767px) {
   .container .nav {
-    background-color: red;
+    position: relative;
+  }
+  .container .nav .nav__item {
+    display: none;
+  }
+  .container .nav .mobile__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .container .nav .mobile__nav .mobile__nav__item {
+    width: 100%;
+  }
+  .container .nav .mobile__nav .mobile__nav__item .mobile__nav__items {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .container .nav .mobile__nav .mobile__nav__item .mobile__search__area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    left: 0%;
+    top: 0%;
+    background: #f00;
+    width: 100%;
+    height: 10vh;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  .container .nav .mobile__nav .mobile__nav__item .mobile__search__area.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .container .section {
+    width: 100%;
+  }
+  .container .section .section__content {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: inline;
+  }
+  .container .section .section__content .content__text {
+    width: 100%;
+  }
+  .container .section .section__content .content__text .text__title {
+    width: 100%;
+    text-align: center;
+  }
+  .container .section .section__content .content__text .text__btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .section .section__content .content__img {
+    position: relative;
+    width: 100%;
+  }
+  .container .section .section__content .content__img img {
+    width: 100%;
+  }
+  .container .section .section__content .content__img .content__type {
+    width: 100%;
+  }
+  .container .section .section__content .content__img .content__type .type__link {
+    font-size: 12px;
+    padding: 0.2rem 0.3rem;
+    font-weight: 600;
+  }
+  .container .section .section__content .content__img .content__type .type__link:nth-child(1) {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 26%;
+    left: 0;
+  }
+  .container .section .section__content .content__img .content__type .type__link:nth-child(2) {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 22%;
+    right: 0;
+  }
+  .container .section .section__content .content__img .content__type .type__link:nth-child(3) {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    bottom: 28%;
+    left: 2%;
+  }
+  .container .section .section__content .content__img .content__type .type__link:nth-child(4) {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 60%;
+    right: 6%;
+  }
+  .container .box {
+    height: auto;
+    overflow-y: auto;
+  }
+  .container .box .box__sort {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .box .box__sort .sort__filter {
+    width: 100%;
+  }
+  .container .box .box__sort .sort__drop {
+    width: 100%;
+  }
+  .container .box .box__card .cards {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .box .box__card .cards .card {
+    width: 92%;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

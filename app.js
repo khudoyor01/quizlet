@@ -89,3 +89,16 @@ sortFilter.addEventListener("keyup", () => {
     }
   }
 });
+
+const searchBtn = document.querySelector(".mobile__search__imgs");
+const mobileSearchArea = document.querySelector(".mobile__search__area");
+const searchExitBtn = document.querySelector(".mobile__exit");
+
+
+searchBtn.addEventListener("click", () => {
+  mobileSearchArea.classList.add("active");
+});
+
+searchExitBtn.addEventListener("click", () => {
+  mobileSearchArea.classList.remove("active");
+});

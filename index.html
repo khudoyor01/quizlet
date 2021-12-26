@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -25,23 +26,37 @@
                 placeholder="Serach words"
               />
             </form>
-            <!-- <ion-icon
-              class="search__close__btn"
-              name="close-outline"
-            ></ion-icon> -->
 
             <div class="nav__sign">
               <button class="sign__in">entrance</button>
               <button class="sign__up">Register now</button>
             </div>
+          </div>
+        </div>
 
-            <!-- <div class="search__account">
-              <img
-                class="account__img"
-                src="https://avatars.mds.yandex.net/i?id=0d322740740888860f12d3fd07b87913-3871383-images-thumbs&n=13"
-                alt=""
+        <div class="mobile__nav">
+          <div class="mobile__nav__item">
+            <div class="mobile__nav__items">
+              <h6 class="mobile__logo">Logo</h6>
+              <button class="mobile__signin">reg</button>
+              <button class="mobile__signup">reg</button>
+              <ion-icon
+                class="mobile__search__imgs"
+                name="search-outline"
+              ></ion-icon>
+            </div>
+            <div class="mobile__search__area">
+              <ion-icon
+                class="mobile__exit"
+                name="arrow-back-outline"
+              ></ion-icon>
+              <input
+                class="mobile__search__input"
+                type="text"
+                placeholder="Search words"
               />
-            </div> -->
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
           </div>
         </div>
       </div>
@@ -50,9 +65,9 @@
 
       <!-- start section -->
 
-      <section class="section">
+      <section class="section row">
         <div class="section__content">
-          <div class="content__text">
+          <div class="content__text col-12 col-md-6 col-lg-5">
             <h1 class="text__title">A Better Learning Future Starts Here.</h1>
             <p class="text__text">
               Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.
@@ -61,7 +76,7 @@
             </p>
             <button class="text__btn">Show more...</button>
           </div>
-          <div class="content__img">
+          <div class="content__img col-12 col-md-6 col-lg-6">
             <img src="./images/Group 6.svg" alt="" />
             <div class="content__type">
               <a class="type__link" href="#">Elmentary words</a>
@@ -76,10 +91,10 @@
       <!-- end section -->
 
       <!-- start main -->
-      <div class="box">
-        <form action="#" class="box__sort">
+      <div class="box row">
+        <form action="#" class="box__sort col-12">
           <input class="sort__filter" type="text" placeholder="Search lists" />
-          <div class="sort__drop">
+          <div class="sort__drop col-12">
             <div class="sort__dropdown">
               <h6 class="dropdown__title">Alphabetically</h6>
               <ion-icon
@@ -190,11 +205,16 @@
 
       <!-- end footer -->
     </div>
-
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
+     -->
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
