@@ -505,6 +505,10 @@
     }
 
     .footer {
+      height: 100vh;
+      .footer__content {
+        flex-direction: column;
+      }
     }
   }
 }
