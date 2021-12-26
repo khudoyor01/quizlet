@@ -299,13 +299,7 @@
   }
 }
 
-.container .box {
-  margin-top: 1rem;
-  height: 50vh;
-  overflow-y: scroll;
-}
-
-.container .box .box__sort {
+.container .box__sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,14 +309,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #f0f0f0;
   width: 80%;
-  height: 64px;
+  height: 10vh;
   margin: 0 auto;
   border-radius: 7px;
 }
 
-.container .box .box__sort .sort__filter {
+.container .box__sort .sort__filter {
   outline: none;
   width: 20%;
   height: 28px;
@@ -333,13 +326,13 @@
   border-radius: 4px;
 }
 
-.container .box .box__sort .sort__drop {
+.container .box__sort .sort__drop {
   position: relative;
   display: inline-block;
   width: 16%;
 }
 
-.container .box .box__sort .sort__drop .sort__dropdown {
+.container .box__sort .sort__drop .sort__dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,17 +348,17 @@
   border-radius: 7px;
 }
 
-.container .box .box__sort .sort__drop .sort__dropdown .dropdown__title {
+.container .box__sort .sort__drop .sort__dropdown .dropdown__title {
   font-size: 15px;
   font-weight: 500;
 }
 
-.container .box .box__sort .sort__drop .sort__dropdown .dropdown__arrow {
+.container .box__sort .sort__drop .sort__dropdown .dropdown__arrow {
   font-size: 18px;
   margin-left: 0.3rem;
 }
 
-.container .box .box__sort .sort__drop .dropdown__links {
+.container .box__sort .sort__drop .dropdown__links {
   display: none;
   position: absolute;
   padding-top: 0.5rem;
@@ -378,7 +371,7 @@
   z-index: 1;
 }
 
-.container .box .box__sort .sort__drop .dropdown__links .link {
+.container .box__sort .sort__drop .dropdown__links .link {
   text-decoration: none;
   color: #000;
   font-size: 15px;
@@ -386,12 +379,18 @@
   display: block;
 }
 
-.container .box .box__sort .sort__drop .dropdown__links .link:hover {
+.container .box__sort .sort__drop .dropdown__links .link:hover {
   background-color: #cecece;
 }
 
-.container .box .box__sort .sort__drop:hover .dropdown__links {
+.container .box__sort .sort__drop:hover .dropdown__links {
   display: block;
+}
+
+.container .box {
+  margin-top: 1rem;
+  height: 50vh;
+  overflow-y: scroll;
 }
 
 .container .box .box__card .cards {
@@ -647,21 +646,22 @@
     top: 60%;
     right: 6%;
   }
-  .container .box {
-    height: 60vh;
-    overflow-y: scroll;
-  }
-  .container .box .box__sort {
+  .container .box__sort {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 3rem;
   }
-  .container .box .box__sort .sort__filter {
+  .container .box__sort .sort__filter {
     width: 100%;
   }
-  .container .box .box__sort .sort__drop {
+  .container .box__sort .sort__drop {
     width: 100%;
+  }
+  .container .box {
+    height: 60vh;
+    overflow-y: scroll;
   }
   .container .box .box__card .cards {
     width: 100%;
