@@ -5,70 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <!-- start nav -->
-
-      <div class="nav">
-        <div class="nav__item">
-          <h1 class="nav__logo">Logo</h1>
-          <div class="nav__search">
-            <form class="search__area" action="">
-              <ion-icon class="search__img" name="search-outline"></ion-icon>
-              <input
-                class="search__input"
-                type="text"
-                autocomplete="off"
-                placeholder="Serach words"
-              />
-            </form>
-
-            <div class="nav__sign">
-              <button class="sign__in">entrance</button>
-              <button class="sign__up">Register now</button>
+      <!-- start navbar -->
+      <div class="navbar">
+        <h6 class="logo">Logo</h6>
+        <div class="navbar__items">
+          <div class="navbar__search__area">
+            <input
+              class="navbar__search"
+              type="text"
+              placeholder="Search words"
+            />
+            <ion-icon class="search__img" name="search-outline"></ion-icon>
+          </div>
+          <div class="navbar__reg">
+            <button class="signin">entrance</button>
+            <button class="signup">Register now</button>
+          </div>
+        </div>
+        <!-- start mobile navbar -->
+        <div class="mobile__navbar__item">
+          <div class="mobile__navbar__area">
+            <h6 class="mobile__logo">Logo</h6>
+            <button class="reg">reg</button>
+            <button class="reg">reg</button>
+            <ion-icon class="img" name="search-outline"></ion-icon>
+          </div>
+          <div class="mobile__search__area">
+            <ion-icon class="arrow" name="arrow-back-outline"></ion-icon>
+            <div class="mobile__search__items">
+              <input type="text" placeholder="Search words" />
+              <ion-icon class="img1" name="search-outline"></ion-icon>
             </div>
           </div>
         </div>
-
-        <div class="mobile__nav">
-          <div class="mobile__nav__item">
-            <div class="mobile__nav__items">
-              <h6 class="mobile__logo">Logo</h6>
-              <button class="mobile__signin">reg</button>
-              <button class="mobile__signup">reg</button>
-              <ion-icon
-                class="mobile__search__imgs"
-                name="search-outline"
-              ></ion-icon>
-            </div>
-            <div class="mobile__search__area">
-              <ion-icon
-                class="mobile__exit"
-                name="arrow-back-outline"
-              ></ion-icon>
-              <input
-                class="mobile__search__input"
-                type="text"
-                placeholder="Search words"
-              />
-              <ion-icon name="search-outline"></ion-icon>
-            </div>
-          </div>
-        </div>
+        <!-- end mobile navbar -->
       </div>
-
-      <!-- end nav -->
-
-      <!-- start section -->
-
-      <section class="section row">
+      <!-- end navbar -->
+      <div class="section">
         <div class="section__content">
-          <div class="content__text col-12 col-md-6 col-lg-5">
-            <h1 class="text__title">A Better Learning Future Starts Here.</h1>
+          <div class="content__text">
+            <h1 class="text__title">
+              A Better Learning Futcolure Starts Here.
+            </h1>
             <p class="text__text">
               Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.
               Recusandae, Itaque Beatae Laboriosam Nulla Odio Voluptatibus
@@ -76,145 +59,29 @@
             </p>
             <button class="text__btn">Show more...</button>
           </div>
-          <div class="content__img col-12 col-md-6 col-lg-6">
+          <div class="content__img">
             <img src="./images/Group 6.svg" alt="" />
-            <div class="content__type">
-              <a class="type__link" href="#">Elmentary words</a>
-              <a class="type__link" href="#">Prepositons words</a>
-              <a class="type__link" href="#">Idioms words</a>
-              <a class="type__link" href="#">Academic words</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- end section -->
-
-      <!-- start main -->
-      <div class="box__sort">
-        <input class="sort__filter" type="text" placeholder="Search lists" />
-        <div class="sort__drop">
-          <div class="sort__dropdown">
-            <h6 class="dropdown__title">Alphabetically</h6>
-            <ion-icon
-              class="dropdown__arrow"
-              name="chevron-down-outline"
-            ></ion-icon>
-          </div>
-          <div class="dropdown__links">
-            <a class="link" href="#">Last cards</a>
-            <a class="link" href="#">Alphabetically</a>
+            <!-- <div class="content__type"> -->
+            <a class="type__link" href="#">Elmentary words</a>
+            <a class="type__link" href="#">Prepositons words</a>
+            <a class="type__link" href="#">Idioms words</a>
+            <a class="type__link" href="#">Academic words</a>
+            <!-- </div> -->
           </div>
         </div>
       </div>
 
       <div class="box">
-        <div class="box__card">
-          <div class="cards"></div>
+        <div class="box__fliter">
+          <input type="text" />
         </div>
       </div>
-      <!-- end main -->
-
-      <!-- start footer -->
-
-      <div class="footer">
-        <div class="footer__content">
-          <div class="footer__bio">
-            <h6 class="bio__author">Author: Ollabergan</h6>
-            <h6 class="bio__phone">Phone number:+998975270606</h6>
-            <div class="social">
-              <a class="link__img" href="#">
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
-                />
-              </a>
-              <a class="link__img" href="#">
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/fluency/48/000000/instagram-new.png"
-                />
-              </a>
-              <a
-                class="link__img"
-                href="https://t.me/joinchat/cTKMHohfBlBmMzI6"
-              >
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/color/48/000000/telegram-app.png"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="footer__bio">
-            <h6 class="bio__author">Author: Ollabergan</h6>
-            <h6 class="bio__phone">Phone number:+998975270606</h6>
-            <div class="social">
-              <a class="link__img" href="#">
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
-                />
-              </a>
-              <a class="link__img" href="#">
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/fluency/48/000000/instagram-new.png"
-                />
-              </a>
-              <a
-                class="link__img"
-                href="https://t.me/joinchat/cTKMHohfBlBmMzI6"
-              >
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/color/48/000000/telegram-app.png"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="footer__bio">
-            <h6 class="bio__author">Author: Ollabergan</h6>
-            <h6 class="bio__phone">Phone number:+998975270606</h6>
-            <div class="social">
-              <a class="link__img" href="#">
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
-                />
-              </a>
-              <a class="link__img" href="#">
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/fluency/48/000000/instagram-new.png"
-                />
-              </a>
-              <a
-                class="link__img"
-                href="https://t.me/joinchat/cTKMHohfBlBmMzI6"
-              >
-                <img
-                  class="logo"
-                  src="https://img.icons8.com/color/48/000000/telegram-app.png"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- end footer -->
     </div>
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-     -->
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
