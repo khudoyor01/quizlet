@@ -247,7 +247,8 @@
       }
     }
     .section {
-      display: block;
+      display: flex;
+      min-height: 90vh;
       .section__content {
         flex-direction: column;
         padding: 0.5rem;
