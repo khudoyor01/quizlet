@@ -11,6 +11,7 @@
   <body>
     <div class="container">
       <!-- start navbar -->
+
       <div class="navbar">
         <h6 class="logo">Logo</h6>
         <div class="navbar__items">
@@ -46,6 +47,7 @@
         <!-- end mobile navbar -->
       </div>
       <!-- end navbar -->
+
       <div class="section">
         <div class="section__content">
           <div class="content__text">
@@ -71,13 +73,74 @@
         </div>
       </div>
 
-      <div class="box">
-        <div class="box__fliter">
-          <input type="text" />
+      <div class="modal_reg">
+        <div class="modal_exit">
+          <ion-icon class="modal_close" name="close-outline"></ion-icon>
+        </div>
+        <div class="reg">
+          <div class="reg_item">
+            <div class="reg_items">
+              <div class="bio_box">
+                <input class="uname" type="text" placeholder="Username" />
+                <input class="lname" type="text" placeholder="Lastname" />
+              </div>
+
+              <div class="email_box">
+                <input class="email" type="email" placeholder="Email" />
+                <h6 class="email_result"></h6>
+              </div>
+
+              <div class="pwd_box">
+                <div class="main_pwd">
+                  <input class="pwd" type="password" placeholder="Password" />
+                  <h6 class="pwd_result"></h6>
+                </div>
+
+                <div class="re_pwd">
+                  <input
+                    class="rpwd"
+                    type="password"
+                    placeholder="Return password"
+                  />
+                  <h6 class="repwd_result"></h6>
+                </div>
+              </div>
+              <button class="btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal_signin">
+        <div class="modal_sign_exit">
+          <ion-icon class="modal_sign_close" name="close-outline"></ion-icon>
+        </div>
+        <div class="signin">
+          <div class="signin_item">
+            <div class="signin_items">
+              <div class="signin_email_box">
+                <input class="emails" type="email" placeholder="Email" />
+                <h6 class="emails_result"></h6>
+              </div>
+
+              <div class="main_pwds">
+                <input class="pwds" type="password" placeholder="Password" />
+                <h6 class="pwds_result"></h6>
+              </div>
+
+              <button class="signin_btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer_content">
+          <h6 class="footer_title">Company:SoftIX</h6>
         </div>
       </div>
     </div>
-
+    <div class="result"></div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

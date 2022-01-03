@@ -6,16 +6,17 @@
 
 .container {
   .navbar {
-    min-height: 10vh;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     border-bottom: 1px solid #f0f0f0;
+    z-index: 1;
     .logo {
       padding: 0 1rem;
       font-size: 23px;
-      font-weight: 600;
+      font-weight: 500;
     }
     .navbar__items {
       padding: 1rem;
@@ -27,15 +28,15 @@
       .navbar__search__area {
         display: flex;
         align-items: center;
-        border: 1px solid #000;
+        border: 1px solid rgba(58, 58, 58, 0.521);
         border-radius: 7px;
-        padding: 0.2rem;
+        padding: 0.2rem 0.4rem;
         .navbar__search {
           border: none;
           outline: none;
           background: transparent;
           font-size: 14px;
-          font-weight: 600;
+          font-weight: 500;
         }
       }
       .navbar__reg {
@@ -69,8 +70,9 @@
         }
         .signup:hover {
           color: rgba(58, 58, 58, 0.521);
-          border: 1px solid rgba(58, 58, 58, 0.521);
+          border: 1.5px solid #44bb6a;
           background: #fff;
+          color: #44bb6a;
         }
       }
     }
@@ -84,11 +86,13 @@
   }
 
   .section {
-    height: 90vh;
+    height: 93vh;
     width: 100%;
     display: flex;
     align-items: center;
     background-color: #f2fbf6;
+    position: relative;
+    z-index: 1;
     .section__content {
       display: flex;
       justify-content: space-around;
@@ -190,6 +194,261 @@
     }
   }
 
+  .modal_reg {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-100%);
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.377);
+    min-height: 100vh;
+    transition: all 0.5s ease;
+    z-index: 3;
+    .modal_exit {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .modal_close {
+        color: #fff;
+        font-weight: 600;
+        font-size: 32px;
+        margin-right: 1rem;
+        margin-top: 1rem;
+      }
+    }
+    .reg {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .reg_item {
+        width: 30%;
+        height: 450px;
+        border: 1px solid #000;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        .reg_items {
+          width: 60%;
+          .bio_box {
+            margin: 1rem 0;
+            .uname,
+            .lname {
+              display: inline-block;
+              margin: 1rem 0;
+              outline: none;
+              width: 100%;
+              height: 32px;
+              border: 1px solid #000;
+              border-radius: 5px;
+              font-size: 15px;
+              font-weight: 500;
+              padding: 0 0.5rem;
+            }
+          }
+          .email_box {
+            height: 60px;
+            .email {
+              outline: none;
+              width: 100%;
+              height: 32px;
+              border: 1px solid #000;
+              border-radius: 5px;
+              font-size: 15px;
+              font-weight: 500;
+              padding: 0 0.5rem;
+            }
+            .email_result {
+              font-size: 12px;
+              font-family: 500;
+            }
+          }
+          .pwd_box {
+            // margin: 1rem 0;
+            .main_pwd {
+              height: 60px;
+              .pwd {
+                outline: none;
+                width: 100%;
+                height: 32px;
+                border: 1px solid #000;
+                border-radius: 5px;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 0 0.5rem;
+              }
+              .pwd_result {
+                font-size: 12px;
+                font-family: 500;
+              }
+            }
+
+            .re_pwd {
+              height: 60px;
+              .rpwd {
+                outline: none;
+                width: 100%;
+                height: 32px;
+                border: 1px solid #000;
+                border-radius: 5px;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 0 0.5rem;
+              }
+              .rpwd_result {
+                font-size: 12px;
+                font-family: 500;
+              }
+            }
+          }
+
+          .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            outline: none;
+            border: 1px solid #44bb6a;
+            width: 45%;
+            height: 28px;
+            border-radius: 5px;
+            background: #44bb6a;
+            color: #fff;
+            font-weight: 500;
+          }
+          .btn:hover {
+            background: #fff;
+            color: #44bb6a;
+            border-color: #44bb6a;
+          }
+        }
+      }
+    }
+  }
+
+  .modal_reg.active {
+    transform: translateY(0);
+  }
+
+  .modal_signin {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-100%);
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.377);
+    transition: all 0.5s ease;
+    z-index: 3;
+    .modal_sign_exit {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .modal_sign_close {
+        color: #fff;
+        font-weight: 600;
+        font-size: 32px;
+        margin-right: 1rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .signin {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .signin_item {
+        width: 30%;
+        height: 450px;
+        border: 1px solid #000;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        .signin_items {
+          width: 60%;
+
+          .signin_email_box {
+            height: 60px;
+            .emails {
+              outline: none;
+              width: 100%;
+              height: 32px;
+              border: 1px solid #000;
+              border-radius: 5px;
+              font-size: 15px;
+              font-weight: 500;
+              padding: 0 0.5rem;
+            }
+            .emails_result {
+              font-size: 12px;
+              font-family: 500;
+            }
+          }
+          // margin: 1rem 0;
+          .main_pwds {
+            height: 60px;
+            .pwds {
+              outline: none;
+              width: 100%;
+              height: 32px;
+              border: 1px solid #000;
+              border-radius: 5px;
+              font-size: 15px;
+              font-weight: 500;
+              padding: 0 0.5rem;
+            }
+            .pwds_result {
+              font-size: 12px;
+              font-family: 500;
+            }
+          }
+
+          .signin_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            outline: none;
+            border: 1px solid #44bb6a;
+            width: 45%;
+            height: 28px;
+            border-radius: 5px;
+            background: #44bb6a;
+            color: #fff;
+            font-weight: 500;
+          }
+          .signin_btn:hover {
+            background: #fff;
+            color: #44bb6a;
+            border-color: #44bb6a;
+          }
+        }
+      }
+    }
+  }
+
+  .modal_signin.active {
+    display: block;
+    transform: translateY(0);
+  }
+
+  .footer {
+    z-index: 1;
+    min-height: 7vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   @media (max-width: 767px) {
     .navbar {
       width: 100%;
@@ -248,7 +507,7 @@
     }
     .section {
       display: flex;
-      min-height: 90vh;
+      max-height: 90vh;
       .section__content {
         flex-direction: column;
         padding: 0.5rem;
@@ -280,11 +539,6 @@
         }
       }
     }
-    .box{
-      min-height: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
   }
+
 }
