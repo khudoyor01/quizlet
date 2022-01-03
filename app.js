@@ -14,15 +14,15 @@ modalExitBtn.addEventListener("click", () => {
   modalReg.classList.remove("active");
 });
 
-img1.addEventListener("click", () => {
-  mob.classList.add("active");
-  mob1.classList.add("active");
-});
+// img1.addEventListener("click", () => {
+//   mob.classList.add("active");
+//   mob1.classList.add("active");
+// });
 
-arrow.addEventListener("click", () => {
-  mob.classList.remove("active");
-  mob1.classList.remove("active");
-});
+// arrow.addEventListener("click", () => {
+//   mob.classList.remove("active");
+//   mob1.classList.remove("active");
+// });
 
 const btn = document.querySelector(".btn");
 
@@ -93,14 +93,27 @@ signCloseBtn.addEventListener("click", () => {
   modalSign.classList.remove("active");
 });
 
-regPanel();
+let searchImg = document.querySelector(".search__img");
+let navbarSearch = document.querySelector(".navbar__search");
+let navbarReg = document.querySelector(".navbar__reg");
+let navbarSearchArea = document.querySelector(".navbar__search__area");
 
-signinBtn.addEventListener("click", () => {
-  console.log(globEmail.email);
-  console.log(globEmail.rPwd);
+searchImg.addEventListener("click", () => {
+  if (searchImg.src.match("./icons/search-outline.svg")) {
+    navbarSearch.style.display = "block";
 
-  let emails = document.querySelector(".emails").value;
-  let pwdsResult = document.querySelector(".pwds_result").value;
-  let emailsResult = document.querySelector(".emails_result").value;
-  let pwds = document.querySelector(".pwds").value;
+    navbarReg.style.display = "none";
+
+    navbarSearchArea.style.width = "50%";
+
+    searchImg.src = "./icons/close-outline.svg";
+  } else if (searchImg.src.match("./icons/close-outline.svg")) {
+    searchImg.src = "./icons/search-outline.svg";
+
+    navbarSearch.style.display = "none";
+
+    navbarReg.style.display = "block";
+
+    navbarSearchArea.style.width = "4%";
+  }
 });
