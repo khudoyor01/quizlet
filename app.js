@@ -2,17 +2,17 @@ const img1 = document.querySelector(".img");
 const arrow = document.querySelector(".arrow");
 const mob = document.querySelector(".mobile__search__area");
 const mob1 = document.querySelector(".mobile__navbar__area");
-const signBtn = document.querySelector(".signup");
+// const signBtn = document.querySelector(".signup");
 const modalReg = document.querySelector(".modal_reg");
 const modalExitBtn = document.querySelector(".modal_close");
 
-signBtn.addEventListener("click", () => {
-  modalReg.classList.add("active");
-});
+// signBtn.addEventListener("click", () => {
+//   modalReg.classList.add("active");
+// });
 
-modalExitBtn.addEventListener("click", () => {
-  modalReg.classList.remove("active");
-});
+// modalExitBtn.addEventListener("click", () => {
+//   modalReg.classList.remove("active");
+// });
 
 // img1.addEventListener("click", () => {
 //   mob.classList.add("active");
@@ -39,6 +39,7 @@ function regPanel() {
   let email = document.querySelector(".email").value;
   let pwd = document.querySelector(".pwd").value;
   let rPwd = document.querySelector(".rpwd").value;
+
   let userData = {
     userName,
     lastName,
@@ -73,12 +74,12 @@ function regPanel() {
   }
 }
 
-btn.addEventListener("click", () => {
-  regPanel();
+// btn.addEventListener("click", () => {
+//   regPanel();
 
-  console.log(globEmail.email);
-  console.log(globEmail.rPwd);
-});
+//   console.log(globEmail.email);
+//   console.log(globEmail.rPwd);
+// });
 
 let modalSignBtn = document.querySelector(".signin");
 let signinBtn = document.querySelector(".signin_btn");
@@ -95,14 +96,14 @@ signCloseBtn.addEventListener("click", () => {
 
 let searchImg = document.querySelector(".search__img");
 let navbarSearch = document.querySelector(".navbar__search");
-let navbarReg = document.querySelector(".navbar__reg");
+// let navbarReg = document.querySelector(".navbar__reg");
 let navbarSearchArea = document.querySelector(".navbar__search__area");
 
 searchImg.addEventListener("click", () => {
   if (searchImg.src.match("./icons/search-outline.svg")) {
     navbarSearch.style.display = "block";
 
-    navbarReg.style.display = "none";
+    modalSignBtn.style.display = "none";
 
     navbarSearchArea.style.width = "50%";
 
@@ -112,8 +113,8 @@ searchImg.addEventListener("click", () => {
 
     navbarSearch.style.display = "none";
 
-    navbarReg.style.display = "block";
+    modalSignBtn.style.display = "block";
 
-    navbarSearchArea.style.width = "4%";
+    navbarSearchArea.style.width = "10%";
   }
 });

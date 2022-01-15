@@ -2,10 +2,12 @@
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container .navbar {
-  height: 7vh;
+  height: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,18 +18,18 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  background-color: #fff;
   border-bottom: 1px solid #f0f0f0;
-  z-index: 1;
+  padding: 0 1rem;
+  z-index: 4;
 }
 
 .container .navbar .logo {
-  padding: 0 1rem;
   font-size: 23px;
   font-weight: 500;
 }
 
 .container .navbar .navbar__items {
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,11 +47,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid rgba(58, 58, 58, 0.521);
   border-radius: 7px;
+  width: 8%;
   padding: 0.2rem 0.4rem;
 }
 
@@ -67,47 +73,35 @@
   width: 18px;
 }
 
-.container .navbar .navbar__items .navbar__reg {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container .navbar .navbar__items .navbar__reg .signin,
-.container .navbar .navbar__items .navbar__reg .signup {
+.container .navbar .navbar__items .signin {
   outline: none;
   border: none;
   background: transparent;
-  width: 35%;
+  width: 20%;
   height: 24px;
   border-radius: 7px;
   font-size: 14px;
   font-weight: 600;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-right: 1rem;
 }
 
-.container .navbar .navbar__items .navbar__reg .signin {
+.container .navbar .navbar__items .signin {
   color: rgba(58, 58, 58, 0.521);
 }
 
-.container .navbar .navbar__items .navbar__reg .signin:hover {
+.container .navbar .navbar__items .signin:hover {
   color: #fff;
   background: #44bb6a;
 }
 
-.container .navbar .navbar__items .navbar__reg .signup {
+.container .navbar .navbar__items .signup {
   background-color: #44bb6a;
   color: #fff;
 }
 
-.container .navbar .navbar__items .navbar__reg .signup:hover {
+.container .navbar .navbar__items .signup:hover {
   color: rgba(58, 58, 58, 0.521);
   border: 1.5px solid #44bb6a;
   background: #fff;
@@ -125,7 +119,7 @@
 }
 
 .container .section {
-  height: 93vh;
+  height: 87vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,6 +474,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
+  height: 10vh;
 }
 
 .container .modal_signin .modal_sign_exit .modal_sign_close {
@@ -487,11 +482,10 @@
   font-weight: 600;
   font-size: 32px;
   margin-right: 1rem;
-  margin-top: 1rem;
 }
 
 .container .modal_signin .signin {
-  min-height: 100vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,7 +501,6 @@
 .container .modal_signin .signin .signin_item {
   width: 30%;
   height: 450px;
-  border: 1px solid #000;
   border-radius: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,7 +593,7 @@
 
 .container .footer {
   z-index: 1;
-  min-height: 7vh;
+  width: 100%;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,6 +604,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-height: 5vh;
 }
 
 @media (max-width: 767px) {
@@ -633,7 +627,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 8%;
+    width: 10%;
+    padding: 5px;
   }
   .container .navbar .navbar__items .navbar__search__area .navbar__search {
     display: none;
@@ -641,8 +636,7 @@
   .container .navbar .navbar__items .navbar__reg {
     width: 100%;
   }
-  .container .navbar .navbar__items .navbar__reg .signin,
-  .container .navbar .navbar__items .navbar__reg .signup {
+  .container .navbar .navbar__items .navbar__reg .signin {
     width: 35%;
     font-size: 12px;
     font-weight: 600;
@@ -744,7 +738,7 @@
   .container .section .section__content .content__img {
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 70%;
   }
   .container .section .section__content .content__img .type__link {
     padding: 0.3rem 0.2rem;
@@ -773,6 +767,10 @@
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     right: 5%;
+  }
+  .container .modal_signin .signin .signin_item {
+    width: 80%;
+    height: 373px;
   }
 }
 /*# sourceMappingURL=style.css.map */
